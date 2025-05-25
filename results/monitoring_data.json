@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-05-25 15:08:28.891611",
+  "segments_overview": {
+    "0": {
+      "size": 1804,
+      "avg_transactions": 6077.841463414634,
+      "avg_revenue": 118828782.09527162,
+      "avg_frequency": 506.48678861788613,
+      "retention_proxy": 0.28612401046448305,
+      "growth_potential": "Средний"
+    },
+    "1": {
+      "size": 96,
+      "avg_transactions": 1896.15625,
+      "avg_revenue": 32852755.544999998,
+      "avg_frequency": 158.01302083333334,
+      "retention_proxy": 0.2519213064960601,
+      "growth_potential": "Средний"
+    }
+  },
+  "alerts": [
+    {
+      "segment_id": 0,
+      "type": "CHURN_RISK",
+      "severity": "HIGH",
+      "message": "Сегмент 0: Высокий риск оттока (консистентность 0.29)",
+      "recommendation": "Персонализированные предложения для удержания"
+    },
+    {
+      "segment_id": 1,
+      "type": "CHURN_RISK",
+      "severity": "HIGH",
+      "message": "Сегмент 1: Высокий риск оттока (консистентность 0.25)",
+      "recommendation": "Персонализированные предложения для удержания"
+    }
+  ],
+  "kpi_trends": {},
+  "recommendations": {}
+}

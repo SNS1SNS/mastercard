@@ -1,0 +1,18 @@
+{
+  "0": {
+    "avg_monthly_revenue": 9902398.507939301,
+    "estimated_lifetime_months": 60,
+    "basic_clv": 594143910.476358,
+    "adjusted_clv": 450877501.9080567,
+    "churn_risk": 0.24113082039911307,
+    "value_tier": "🌟 Высокая ценность"
+  },
+  "1": {
+    "avg_monthly_revenue": 2737729.6287499997,
+    "estimated_lifetime_months": 60,
+    "basic_clv": 164263777.725,
+    "adjusted_clv": 97531618.02421875,
+    "churn_risk": 0.40625,
+    "value_tier": "🌟 Высокая ценность"
+  }
+}

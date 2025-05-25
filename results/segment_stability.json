@@ -1,0 +1,18 @@
+{
+  "0": {
+    "stability_index": 0.6607494815573122,
+    "cv_transactions": 1.0138602740928335,
+    "cv_amount": 0.5096673447845433,
+    "cv_merchants": 0.45872082579455936,
+    "churn_risk": 0.24113082039911307,
+    "consistency_score": 0.33925051844268783
+  },
+  "1": {
+    "stability_index": 0.4866958082127364,
+    "cv_transactions": 0.6180153493386562,
+    "cv_amount": 0.4129923878961024,
+    "cv_merchants": 0.4290796874034506,
+    "churn_risk": 0.40625,
+    "consistency_score": 0.5133041917872636
+  }
+}

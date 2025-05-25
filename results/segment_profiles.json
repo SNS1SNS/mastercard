@@ -1,0 +1,130 @@
+{
+  "0": {
+    "size": 1804,
+    "percentage": 94.94736842105263,
+    "characteristics": {
+      "avg_transactions": 6077.841463414634,
+      "median_transactions": 4113.5,
+      "avg_total_amount": 118828782.09527162,
+      "median_total_amount": 86461783.8,
+      "avg_amount": 22787.157311529932,
+      "median_amount": 9562.652283813746,
+      "avg_merchants": 347.04933481152995,
+      "avg_categories": 12.740022172949002,
+      "avg_cities": 5.975609756097561,
+      "purchase_ratio": 0.0,
+      "spending_consistency": 0.28612401046448305,
+      "amount_range": 2101152.1339634145
+    },
+    "segment_type": {
+      "name": "🔄 Обычные клиенты",
+      "description": "Средняя активность + средний чек",
+      "priority": "Средний",
+      "value": "Средняя"
+    },
+    "time_patterns": {
+      "preferred_hour": 8,
+      "preferred_day": 6,
+      "hour_distribution": {
+        "8": 854,
+        "19": 612,
+        "9": 100,
+        "18": 52,
+        "13": 46,
+        "12": 41,
+        "20": 40,
+        "10": 21,
+        "14": 12,
+        "17": 9,
+        "11": 6,
+        "7": 6,
+        "21": 2,
+        "16": 2,
+        "15": 1
+      },
+      "day_distribution": {
+        "6": 1121,
+        "5": 656,
+        "1": 13,
+        "4": 5,
+        "0": 5,
+        "3": 4
+      }
+    },
+    "tech_preferences": {
+      "preferred_pos_mode": "QR_Code",
+      "preferred_wallet": "Bank's QR",
+      "pos_distribution": {
+        "QR_Code": 747,
+        "ECOM": 667,
+        "Contactless": 362,
+        "Chip": 28
+      },
+      "wallet_distribution": {
+        "Bank's QR": 1490,
+        "Google Pay": 107,
+        "Samsung Pay": 106,
+        "Apple Pay": 101
+      }
+    }
+  },
+  "1": {
+    "size": 96,
+    "percentage": 5.052631578947368,
+    "characteristics": {
+      "avg_transactions": 1896.15625,
+      "median_transactions": 1759.0,
+      "avg_total_amount": 32852755.544999998,
+      "median_total_amount": 28462990.245,
+      "avg_amount": 17515.7578125,
+      "median_amount": 5172.869270833333,
+      "avg_merchants": 299.78125,
+      "avg_categories": 2.4479166666666665,
+      "avg_cities": 5.96875,
+      "purchase_ratio": 0.0,
+      "spending_consistency": 0.2519213064960601,
+      "amount_range": 1343662.9615625
+    },
+    "segment_type": {
+      "name": "😴 Спящие клиенты",
+      "description": "Очень низкая активность + низкий чек",
+      "priority": "Низкий",
+      "value": "Низкая"
+    },
+    "time_patterns": {
+      "preferred_hour": 8,
+      "preferred_day": 6,
+      "hour_distribution": {
+        "8": 42,
+        "19": 22,
+        "18": 8,
+        "13": 7,
+        "9": 5,
+        "12": 5,
+        "10": 4,
+        "11": 1,
+        "14": 1,
+        "20": 1
+      },
+      "day_distribution": {
+        "6": 49,
+        "5": 46,
+        "3": 1
+      }
+    },
+    "tech_preferences": {
+      "preferred_pos_mode": "Unknown",
+      "preferred_wallet": "Unknown",
+      "pos_distribution": {
+        "Unknown": 86,
+        "Contactless": 5,
+        "QR_Code": 4,
+        "Chip": 1
+      },
+      "wallet_distribution": {
+        "Unknown": 86,
+        "Bank's QR": 10
+      }
+    }
+  }
+}
