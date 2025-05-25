@@ -1,18 +1,34 @@
 {
   "0": {
-    "stability_index": 0.6607494815573122,
-    "cv_transactions": 1.0138602740928335,
-    "cv_amount": 0.5096673447845433,
-    "cv_merchants": 0.45872082579455936,
-    "churn_risk": 0.24113082039911307,
-    "consistency_score": 0.33925051844268783
+    "stability_index": 0.5727385045417668,
+    "cv_transactions": 0.8889556224887403,
+    "cv_amount": 0.5170853262595962,
+    "cv_merchants": 0.3121745648769637,
+    "churn_risk": 0.1351010101010101,
+    "consistency_score": 0.4272614954582332
   },
   "1": {
-    "stability_index": 0.4866958082127364,
-    "cv_transactions": 0.6180153493386562,
-    "cv_amount": 0.4129923878961024,
-    "cv_merchants": 0.4290796874034506,
-    "churn_risk": 0.40625,
-    "consistency_score": 0.5133041917872636
+    "stability_index": 0.25640231892124904,
+    "cv_transactions": 0.2598258745820758,
+    "cv_amount": 0.2625564576526365,
+    "cv_merchants": 0.24682462452903486,
+    "churn_risk": 1.0,
+    "consistency_score": 0.743597681078751
+  },
+  "2": {
+    "stability_index": 0.42862875265874206,
+    "cv_transactions": 0.5416527448097146,
+    "cv_amount": 0.4125667174679844,
+    "cv_merchants": 0.3316667956985272,
+    "churn_risk": 0.3956043956043956,
+    "consistency_score": 0.571371247341258
+  },
+  "3": {
+    "stability_index": 0.38667535135489634,
+    "cv_transactions": 0.3777586689347563,
+    "cv_amount": 0.38496996751809914,
+    "cv_merchants": 0.39729741761183346,
+    "churn_risk": 1.0,
+    "consistency_score": 0.6133246486451036
   }
 }

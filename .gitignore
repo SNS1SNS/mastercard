@@ -1,5 +1,7 @@
 # Файлы данных (большие файлы)
 DECENTRATHON_3.0.parquet
+create_pdf_presentation.py
+create_presentation.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -131,17 +133,25 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Данные (большие файлы)
+# Большие файлы данных (исключаем из репозитория)
 *.parquet
+!results/customer_segmentation_results.parquet  # Включаем результаты сегментации
 *.csv
+!results/client_segments.csv                    # Включаем основные результаты
+!results/cluster_summary_statistics.csv         # Включаем статистику
+!results/feature_analysis.csv                   # Включаем анализ признаков
 *.xlsx
 *.xls
 
-# Результаты анализа
-results/
-*.png
-*.html
-*.json
+# Большие результаты анализа (исключаем)
+results/segment_dashboard.html                   # 4.5MB - слишком большой
+cluster_analysis.html                           # 4.5MB - слишком большой
+
+# Графики (включаем важные, исключаем временные)
+cluster_optimization.png                        # Включаем в репозиторий
+!results/segment_analysis_charts.png            # Включаем основные графики
+!results/risk_analysis_charts.png               # Включаем графики рисков
+results/extended_*.png                          # Исключаем расширенные версии
 
 # IDE
 .vscode/

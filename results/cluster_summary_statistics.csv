@@ -1,5 +1,0 @@
-,total_transactions,total_transactions,total_transactions,total_transactions,total_amount,total_amount,total_amount,avg_amount,avg_amount,avg_amount,unique_merchants,unique_merchants,unique_categories,unique_categories,purchase_ratio,purchase_ratio,spending_consistency,spending_consistency
-,count,mean,median,std,mean,median,std,mean,median,std,mean,median,mean,median,mean,median,mean,median
-cluster,,,,,,,,,,,,,,,,,,
-0,1804,6077.84,4113.5,6162.08,118828782.1,86461783.8,115116890.16,22787.16,21475.08,11613.87,347.05,407.0,12.74,13.0,0.0,0.0,0.29,0.28
-1,96,1896.16,1759.0,1171.85,32852755.54,28462990.24,25917539.58,17515.76,15115.2,7233.87,299.78,325.0,2.45,2.0,0.0,0.0,0.25,0.25

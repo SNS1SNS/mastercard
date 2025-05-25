@@ -207,34 +207,44 @@ class ClusteringModels:
         print(f"✅ График оптимизации {algorithm} сохранен")
     
     def fit_kmeans(self, n_clusters: int = None) -> Dict[str, Any]:
-        """Обучение K-means модели"""
+        """Обучение модели K-means"""
         if n_clusters is None:
-            n_clusters = self.find_optimal_clusters_kmeans()
-        
-        print(f"\n🎯 Обучение K-means с {n_clusters} кластерами...")
-        
+            n_clusters = config.model.target_clusters  # Используем целевое количество кластеров
+            
+        print(f"\n🤖 Обучение K-means с {n_clusters} кластерами...")
         
         kmeans = KMeans(
-            n_clusters=n_clusters,
-            random_state=config.model.random_state,
-            n_init=config.model.n_init
+            n_clusters=n_clusters, 
+            random_state=config.model.random_state, 
+            n_init=config.model.n_init,
+            max_iter=300,
+            tol=1e-4
         )
+        
         cluster_labels = kmeans.fit_predict(self.scaled_features)
         
-        
+        # Расчет метрик
         metrics = self._calculate_clustering_metrics(cluster_labels)
         
-        
+        # Сохранение результатов
         self.models['kmeans'] = kmeans
         self.results['kmeans'] = {
+            'model': kmeans,
             'labels': cluster_labels,
-            'n_clusters': n_clusters,
             'metrics': metrics,
-            'centroids': kmeans.cluster_centers_
+            'n_clusters': n_clusters,
+            'cluster_centers': kmeans.cluster_centers_,
+            'inertia': kmeans.inertia_
         }
         
-        print(f"✅ K-means обучен успешно")
-        self._print_metrics(metrics, 'K-means')
+        self._print_metrics(metrics, f'K-means ({n_clusters} кластеров)')
+        
+        # Анализ размеров кластеров
+        unique, counts = np.unique(cluster_labels, return_counts=True)
+        print(f"\n📊 Размеры кластеров:")
+        for cluster_id, count in zip(unique, counts):
+            percentage = (count / len(cluster_labels)) * 100
+            print(f"   Кластер {cluster_id}: {count:,} клиентов ({percentage:.1f}%)")
         
         return self.results['kmeans']
     

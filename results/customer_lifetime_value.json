@@ -1,18 +1,34 @@
 {
   "0": {
-    "avg_monthly_revenue": 9902398.507939301,
+    "avg_monthly_revenue": 11482587.596493056,
     "estimated_lifetime_months": 60,
-    "basic_clv": 594143910.476358,
-    "adjusted_clv": 450877501.9080567,
-    "churn_risk": 0.24113082039911307,
+    "basic_clv": 688955255.7895833,
+    "adjusted_clv": 595876704.8180108,
+    "churn_risk": 0.1351010101010101,
     "value_tier": "🌟 Высокая ценность"
   },
   "1": {
-    "avg_monthly_revenue": 2737729.6287499997,
+    "avg_monthly_revenue": 181910.286375,
     "estimated_lifetime_months": 60,
-    "basic_clv": 164263777.725,
-    "adjusted_clv": 97531618.02421875,
-    "churn_risk": 0.40625,
+    "basic_clv": 10914617.1825,
+    "adjusted_clv": 0.0,
+    "churn_risk": 1.0,
+    "value_tier": "📉 Низкая ценность"
+  },
+  "2": {
+    "avg_monthly_revenue": 3009364.0583058614,
+    "estimated_lifetime_months": 60,
+    "basic_clv": 180561843.4983517,
+    "adjusted_clv": 109130784.53197081,
+    "churn_risk": 0.3956043956043956,
     "value_tier": "🌟 Высокая ценность"
+  },
+  "3": {
+    "avg_monthly_revenue": 701516.5888699186,
+    "estimated_lifetime_months": 60,
+    "basic_clv": 42090995.33219512,
+    "adjusted_clv": 0.0,
+    "churn_risk": 1.0,
+    "value_tier": "📉 Низкая ценность"
   }
 }

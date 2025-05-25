@@ -30,12 +30,16 @@ class FeatureConfig:
                 'total_transactions', 'total_amount', 'avg_amount', 'median_amount',
                 'std_amount', 'amount_range', 'unique_merchants', 'unique_categories',
                 'unique_cities', 'purchase_ratio', 'avg_merchants_per_transaction',
-                'spending_consistency', 'preferred_hour', 'preferred_day'
+                'spending_consistency', 'preferred_hour', 'preferred_day',
+                # Новые признаки для лучшего разделения сегментов
+                'high_value_transactions_ratio', 'travel_indicator', 'premium_merchant_ratio',
+                'weekend_activity_ratio', 'evening_activity_ratio'
             ]
         
         if self.categorical_features is None:
             self.categorical_features = [
-                'preferred_pos_mode', 'preferred_wallet', 'activity_level', 'spending_level'
+                'preferred_pos_mode', 'preferred_wallet', 'activity_level', 'spending_level',
+                'client_tier', 'travel_pattern'
             ]
             
         if self.time_features is None:
@@ -48,8 +52,9 @@ class ModelConfig:
     """Конфигурация модели"""
     
     max_clusters: int = 15
+    target_clusters: int = 4  # Целевое количество кластеров
     random_state: int = 42
-    n_init: int = 10
+    n_init: int = 20  # Увеличиваем для лучшей стабильности
     
     
     outlier_contamination: float = 0.05
@@ -78,6 +83,43 @@ class OutputConfig:
     detailed_report: str = 'segmentation_report.html'
     business_recommendations: str = 'business_recommendations.md'
 
+@dataclass
+class SegmentConfig:
+    """Конфигурация сегментов"""
+    segment_definitions: Dict[str, Dict[str, Any]] = None
+    
+    def __post_init__(self):
+        if self.segment_definitions is None:
+            self.segment_definitions = {
+                'regular': {
+                    'name': '🔄 Обычные клиенты',
+                    'emoji': '🔄',
+                    'description': 'Стандартная активность и средние траты',
+                    'priority': 'Средний',
+                    'color': '#3498db'
+                },
+                'sleeping': {
+                    'name': '😴 Спящие клиенты', 
+                    'emoji': '😴',
+                    'description': 'Низкая активность, требуют реактивации',
+                    'priority': 'Высокий',
+                    'color': '#95a5a6'
+                },
+                'vip': {
+                    'name': '💎 VIP клиенты',
+                    'emoji': '💎', 
+                    'description': 'Высокие траты, премиум сегмент',
+                    'priority': 'Очень высокий',
+                    'color': '#f39c12'
+                },
+                'traveler': {
+                    'name': '✈️ Путешественники',
+                    'emoji': '✈️',
+                    'description': 'Активные траты в разных городах',
+                    'priority': 'Высокий', 
+                    'color': '#e74c3c'
+                }
+            }
 
 class Config:
     """Главный класс конфигурации"""
@@ -88,6 +130,7 @@ class Config:
         self.model = ModelConfig()
         self.visualization = VisualizationConfig()
         self.output = OutputConfig()
+        self.segments = SegmentConfig()
         
         
         os.makedirs(self.data.output_dir, exist_ok=True)

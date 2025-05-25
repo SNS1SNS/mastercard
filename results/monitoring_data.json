@@ -1,20 +1,36 @@
 {
-  "timestamp": "2025-05-25 15:08:28.891611",
+  "timestamp": "2025-05-25 16:32:35.325570",
   "segments_overview": {
     "0": {
-      "size": 1804,
-      "avg_transactions": 6077.841463414634,
-      "avg_revenue": 118828782.09527162,
-      "avg_frequency": 506.48678861788613,
-      "retention_proxy": 0.28612401046448305,
+      "size": 1584,
+      "avg_transactions": 7031.506313131313,
+      "avg_revenue": 137791051.15791667,
+      "avg_frequency": 585.9588594276094,
+      "retention_proxy": 0.2766431996453271,
       "growth_potential": "Средний"
     },
     "1": {
-      "size": 96,
-      "avg_transactions": 1896.15625,
-      "avg_revenue": 32852755.544999998,
-      "avg_frequency": 158.01302083333334,
-      "retention_proxy": 0.2519213064960601,
+      "size": 20,
+      "avg_transactions": 81.35,
+      "avg_revenue": 2182923.4365,
+      "avg_frequency": 6.779166666666666,
+      "retention_proxy": 0.351696187713319,
+      "growth_potential": "Высокий"
+    },
+    "2": {
+      "size": 91,
+      "avg_transactions": 2034.0,
+      "avg_revenue": 36112368.69967034,
+      "avg_frequency": 169.5,
+      "retention_proxy": 0.24307069508207219,
+      "growth_potential": "Средний"
+    },
+    "3": {
+      "size": 205,
+      "avg_transactions": 318.9170731707317,
+      "avg_revenue": 8418199.066439023,
+      "avg_frequency": 26.576422764227644,
+      "retention_proxy": 0.3407563424981397,
       "growth_potential": "Средний"
     }
   },
@@ -23,14 +39,14 @@
       "segment_id": 0,
       "type": "CHURN_RISK",
       "severity": "HIGH",
-      "message": "Сегмент 0: Высокий риск оттока (консистентность 0.29)",
+      "message": "Сегмент 0: Высокий риск оттока (консистентность 0.28)",
       "recommendation": "Персонализированные предложения для удержания"
     },
     {
-      "segment_id": 1,
+      "segment_id": 2,
       "type": "CHURN_RISK",
       "severity": "HIGH",
-      "message": "Сегмент 1: Высокий риск оттока (консистентность 0.25)",
+      "message": "Сегмент 2: Высокий риск оттока (консистентность 0.24)",
       "recommendation": "Персонализированные предложения для удержания"
     }
   ],
